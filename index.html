@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BookingJini - AI Social Media Post Generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>BookingJini</h1>
+    <p>AI-Powered Social Media Post Generator for Small Hotels</p>
+  </header>
+
+  <!-- Main Form -->
+  <section id="generator-form">
+    <label for="hotelName">Hotel Name:</label>
+    <input type="text" id="hotelName" placeholder="Enter your hotel name" />
+
+    <label for="occasion">Select Occasion:</label>
+    <select id="occasion">
+      <option value="Independence Day">Independence Day</option>
+      <option value="Holi">Holi</option>
+      <option value="Diwali">Diwali</option>
+      <option value="Women’s Day">Women’s Day</option>
+      <!-- You can add more occasions as needed -->
+    </select>
+
+    <button id="generateBtn">Generate Post</button>
+  </section>
+
+  <!-- Preview Section -->
+  <section id="preview">
+    <h2>Generated Post Preview</h2>
+    <div id="post-preview">
+      <img
+        id="generatedImage"
+        src="https://via.placeholder.com/400x300?text=Your+Image+Appears+Here"
+        alt="Generated Post"
+      />
+      <textarea
+        id="generatedCaption"
+        rows="4"
+        placeholder="Generated caption will appear here..."
+      ></textarea>
+    </div>
+    <button id="downloadBtn">Download Post</button>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
